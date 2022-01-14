@@ -24,12 +24,7 @@ type Check struct {
 	args   []string
 }
 
-func NewCheck(
-	stdin io.Reader,
-	stderr io.Writer,
-	stdout io.Writer,
-	args []string,
-) *Check {
+func NewCheck(stdin io.Reader, stderr io.Writer, stdout io.Writer, args []string) *Check {
 	return &Check{
 		stdin:  stdin,
 		stderr: stderr,

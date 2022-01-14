@@ -1,0 +1,10 @@
+{
+  "source": {
+    "debug": true,
+    "repository": "certbot/dns-google"
+  },
+  "version": {
+    "tag":"v0.25.1",
+    "digest":"sha256:1cc4ac08f65234dd720918b986dd0b7281891dafd1ee81bb52cb991381994cc6"
+  }
+}
