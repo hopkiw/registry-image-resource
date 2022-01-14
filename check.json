@@ -1,6 +1,7 @@
 {
   "source": {
     "debug": true,
+    "google": true,
     "repository": "gcr.io/liamh-testing/daisy"
   },
   "version": {

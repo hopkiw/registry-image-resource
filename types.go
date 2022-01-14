@@ -146,6 +146,7 @@ func (source Source) AuthOptions(repo name.Repository, scopeActions []string) ([
 			Password: source.Password,
 		}
 	} else if source.Google {
+		logrus.Debugf("Try to use Google creds!!")
 		var err error
 		if auth, err = google.NewEnvAuthenticator(); err != nil {
 			logrus.Errorf("failed to determine Google default credentials.")
