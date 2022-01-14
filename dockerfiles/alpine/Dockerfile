@@ -20,7 +20,7 @@ RUN set -e; for pkg in $(go list ./...); do \
 FROM ${base_image} AS resource
 COPY check.json .
 RUN apk update && apk upgrade
-RUN apk add --no-cache bash tzdata ca-certificates unzip zip gzip tar
+RUN apk add --no-cache bash tzdata ca-certificates unzip zip gzip tar curl
 COPY --from=builder assets/ /opt/resource/
 RUN chmod +x /opt/resource/*
 # Ensure /etc/hosts is honored
