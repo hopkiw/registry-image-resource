@@ -1,7 +1,7 @@
 {
   "source": {
     "debug": true,
-    "repository": "certbot/dns-google"
+    "repository": "gcr.io/liamh-testing/daisy"
   },
   "version": {
     "tag":"v0.25.1",
