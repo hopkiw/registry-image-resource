@@ -35,6 +35,7 @@ func NewCheck(stdin io.Reader, stderr io.Writer, stdout io.Writer, args []string
 
 func (c *Check) Execute() error {
 	setupLogging(c.stderr)
+	logrus.Warnf("running Execute")
 
 	var req resource.CheckRequest
 	decoder := json.NewDecoder(c.stdin)
